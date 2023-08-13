@@ -4,6 +4,7 @@ import img1 from "./icon1.svg";
 import img2 from "./icon2.svg";
 import img3 from "./icon3.svg";
 import img4 from "./icon4.svg";
+import { Link } from "react-router-dom";
 
 export const ModalWrapper = styled.div`
   max-width: 1179px;
@@ -49,34 +50,42 @@ export const ModalWrapper = styled.div`
 export const Modal = () => {
   return (
     <ModalWrapper>
-      <div className="service">
-        <img src={img1} alt="icon" />
-        <div className="items">
-        <p className="header">Software Development</p>
-      <p className="text">Creating Innovative Software Solutions</p>
+      <Link to="/projects">
+        <div className="service">
+          <img src={img1} alt="icon" />
+          <div className="items">
+            <p className="header">Software Development</p>
+            <p className="text">Creating Innovative Software Solutions</p>
+          </div>
         </div>
-      </div>
-      <div className="service">
-        <img src={img2} alt="icon" />
-        <div className="items">
-        <p className="header">Machine Learning Projects</p>
-      <p className="text">Building Intelligent Machine Learning Models</p>
+      </Link>
+      <Link to="/projects">
+        <div className="service">
+          <img src={img2} alt="icon" />
+          <div className="items">
+            <p className="header">Machine Learning Projects</p>
+            <p className="text">Building Intelligent Machine Learning Models</p>
+          </div>
         </div>
-      </div>
-      <div className="service">
-        <img src={img3} alt="icon" />
-        <div className="items">
-        <p className="header">Code Optimization</p>
-      <p className="text">Optimizing Code for Efficiency</p>
+      </Link>
+      <Link to="/projects">
+        <div className="service">
+          <img src={img3} alt="icon" />
+          <div className="items">
+            <p className="header">Code Optimization</p>
+            <p className="text">Optimizing Code for Efficiency</p>
+          </div>
         </div>
-      </div>
-      <div className="service">
-        <img src={img4} alt="icon" />
-        <div className="items">
-        <p className="header">Data Analytics</p>
-      <p className="text">Extracting Insights from Data</p>
+      </Link>
+      <Link to="/projects">
+        <div className="service">
+          <img src={img4} alt="icon" />
+          <div className="items">
+            <p className="header">Data Analytics</p>
+            <p className="text">Extracting Insights from Data</p>
+          </div>
         </div>
-      </div>
+      </Link>
     </ModalWrapper>
   );
 };

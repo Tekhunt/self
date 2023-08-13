@@ -5,8 +5,11 @@ import smsIcon from "../messageIcon.svg";
 import arrowDown from "../arrow.svg";
 import arrowMobile from "../arrowMobile.svg";
 import smsMobile from "../smsMobile.svg";
+import { Link } from "react-router-dom";
+
 
 import styled from "styled-components";
+import { Contact } from "./Contact";
 
 export const BodyWrapper = styled.div`
   max-width: 1179px;
@@ -279,6 +282,61 @@ export const NumberWrapper = styled.div`
   }
 `;
 
+export const FooterHeroWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  margin-top: 150px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 43px;
+
+    .heroTextWrapper p:nth-child(1) {
+      margin-bottom: 15px;
+    }
+    .heroTextWrapper p:nth-child(2) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .heroTextWrapper p:nth-child(1) {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 188%;
+    color: #333333;
+  }
+  .heroTextWrapper p:nth-child(2) {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 111%;
+    color: #333333;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 52px;
+    background: #005ecd;
+    border: none;
+    height: 70px;
+    width: 211px;
+    border-radius: 20px;
+    padding: 25px, 52px, 25px, 52px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 1024px) {
+    padding-top: 30px;
+  }
+`;
+
 export const Body = () => {
   return (
     <BodyWrapper>
@@ -310,7 +368,8 @@ export const Body = () => {
         </div>
       </HeroWrapper>
       <WorkerWrapper>
-        <img src={playVid} alt="worker" />
+        
+        {/* <img src={playVid} alt="worker" /> */}
       </WorkerWrapper>
       <p className="trust">Ideas to elegant solutions.</p>
       <NumberWrapper>
@@ -335,6 +394,17 @@ export const Body = () => {
           <p>Of my clients have returned again</p>
         </div>
       </NumberWrapper>
+      {/* <Contact /> */}
+
+      <FooterHeroWrapper>
+        <div className="heroTextWrapper">
+        <p> Explore my software and machine learning projects.</p>
+          <p>
+            Join the community of innovators who have trusted me with their projects.
+          </p>
+        </div>
+        <button><Link to='/projects'>Explore</Link></button>
+      </FooterHeroWrapper>
     </BodyWrapper>
   );
 };

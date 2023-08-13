@@ -143,16 +143,16 @@ export const Header = () => {
             </div>
 
             <Linkwrapper>
-              <a href="https://mvx.trade/about">Bio</a>
+              <a href="">Bio</a>
               <div className="service-tag" onClick={clicker}>
                 <span> Portfolio</span> <HiOutlineChevronDown />
               </div>
-              <a href="https://mvx.trade/partners">Elavator Pitch</a>
-              <a href="https://mvx.trade/partners">Partners</a>
-              <a href="https://mvx.trade/partners">Partners</a>
+              <a href="">Elavator Pitch</a>
+              <a href="">Partners</a>
+              <a href="">Partners</a>
             </Linkwrapper>
             <AuthWrapper>
-              <a href="https://mvx.trade/login">Sign in</a>
+              <a href="">Sign in</a>
               <button>Sign up</button>
             </AuthWrapper>
           </HeaderWrapper>
