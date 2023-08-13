@@ -1,4 +1,4 @@
-export const ProjectCard = ({header, desc, img1, ptitle1, pdesc1, img2, ptitle2, pdesc2}) => {
+export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, img2, ptitle2, pdesc2}) => {
   return (
     <section>
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
@@ -35,10 +35,11 @@ export const ProjectCard = ({header, desc, img1, ptitle1, pdesc1, img2, ptitle2,
                   />
 
                   <div class="mt-3">
+                    <a href={link1} target="_blank">
                     <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
                     {ptitle1}
                     </h3>
-
+                    </a>
                     <p class="mt-1 text-sm text-gray-700">{pdesc1}</p>
                   </div>
                 </a>
@@ -53,9 +54,11 @@ export const ProjectCard = ({header, desc, img1, ptitle1, pdesc1, img2, ptitle2,
                   />
 
                   <div class="mt-3">
+                  <a href={link2} target="_blank">
                     <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
                     {ptitle2}
                     </h3>
+                    </a>
 
                     <p class="mt-1 text-sm text-gray-700">{pdesc2}</p>
                   </div>

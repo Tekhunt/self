@@ -8,7 +8,7 @@ import { Menu } from "./Menu";
 import { ServiceModal } from "./ServiceModal";
 import { useService } from "./ContextAPI/Context";
 import { Modal } from "./Modal";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const HeaderWrapper = styled.div`
   max-width: 1298px;
@@ -143,7 +143,7 @@ export const Header = () => {
             </div>
 
             <Linkwrapper>
-              <a href="">Bio</a>
+            <Link to='/bio'>Bio</Link>
               <div className="service-tag" onClick={clicker}>
                 <span> Portfolio</span> <HiOutlineChevronDown />
               </div>

@@ -8,7 +8,21 @@ export const Projects = () => {
     <>
       <Header />
       <ProjectCard
+        header="ALX Project"
+        link1="https://youtu.be/NO8UCGCojBE"
+        link2="https://ekotracka.netlify.app/"
+        desc="Here's is a link to team's Month 2 project slide deck "
+        img2="https://images.pexels.com/photos/13682408/pexels-photo-13682408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        ptitle1="EkoTracka Youtube Video"
+        pdesc1="Ekotracka is a leading waste management company dedicated to providing sustainable solutions for effective waste disposal and recycling in Lagos. We are committed to creating a cleaner and greener environment by promoting responsible waste management practices."
+        img1="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        ptitle2="EkoTracka Project Slides"
+        pdesc2="Please click on this card to visit EkoTrack official website and view slides "
+      />
+      <ProjectCard
         header="Software Projects"
+        link1=""
+        link2=""
         desc="Explore some of my recent software engineering projects."
         img2="https://images.pexels.com/photos/4050388/pexels-photo-4050388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         ptitle1="E-commerce Web App"
@@ -19,6 +33,8 @@ export const Projects = () => {
       />
       <ProjectCard
         header="Machine Learning Projects"
+        link1=""
+        link2=""
         desc="Explore some of my recent Machine Learning projects."
         img2="https://images.pexels.com/photos/6238100/pexels-photo-6238100.jpeg?auto=compress&cs=tinysrgb&w=800"
         ptitle1="Product recommender"
