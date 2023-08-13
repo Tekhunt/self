@@ -52,16 +52,16 @@ const toService =() => {
 
   return (
     <MenuWrapper>
-      <p>About</p>
+      <p>Bio</p>
       {/* <div className="service" onClick={condition}> */}
       <div className="service" onClick={toService}>
 
-        <p>Services</p>
+        <p>Portfolio</p>
         <p>
           <HiOutlineChevronRight />
         </p>
       </div>
-      <p>Resources</p>
+      <p>Elevaator Pitch</p>
       <p>Partners</p>
       <p>Speak to us</p>
       <p className="sign-in">Sign in</p>

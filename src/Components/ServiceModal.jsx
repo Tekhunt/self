@@ -62,38 +62,36 @@ export const ServiceModal = () => {
     <ServiceWrapper>
       <div className="serviceLink" onClick={backHome}>
         <HiOutlineChevronLeft />
-        <p> Services</p>
+        <p> Portfolio</p>
       </div>
       <hr />
       <ServiceItemsWrapper>
         <div className="service">
           <img src={img1} alt="icon" />
           <div className="items">
-            <p className="header">Freight Forwarding</p>
-            <p className="text">Easy Freight Forwarding Service</p>
+          <p className="header">Software Development</p>
+            <p className="text">Creating Innovative Software Solutions</p>
           </div>
         </div>
         <div className="service">
           <img src={img2} alt="icon" />
           <div className="items">
-            <p className="header">Freight Finance</p>
-            <p className="text">
-              Get finance for your freight forwarding needs
-            </p>
+          <p className="header">Machine Learning Projects</p>
+            <p className="text">Building Intelligent Machine Learning Models</p>
           </div>
         </div>
         <div className="service">
           <img src={img3} alt="icon" />
           <div className="items">
-            <p className="header">Haulage</p>
-            <p className="text">Overland Logistics You Can Rely On</p>
+          <p className="header">Code Optimization</p>
+            <p className="text">Optimizing Code for Efficiency</p>
           </div>
         </div>
         <div className="service">
           <img src={img4} alt="icon" />
           <div className="items">
-            <p className="header">Customs</p>
-            <p className="text">Clear your cargo fast</p>
+          <p className="header">Data Analytics</p>
+            <p className="text">Extracting Insights from Data</p>
           </div>
         </div>
       </ServiceItemsWrapper>

@@ -277,12 +277,12 @@ export const Footer = () => {
     <FooterWrapper>
       <FooterHeroWrapper>
         <div className="heroTextWrapper">
-          <p> Explore my software/machine learning projects.</p>
+        <p> Explore my software and machine learning projects.</p>
           <p>
-            Join 300+ top brands that have trusted me with their project
+            Join the community of innovators who have trusted me with their projects.
           </p>
         </div>
-        <button>Get started</button>
+        <button>Contact Me</button>
       </FooterHeroWrapper>
       <hr className="first-hr" />
       <FooterGridWrapper>
@@ -293,15 +293,15 @@ export const Footer = () => {
           </div>
           <div className="address-container">
             <div className="call">
-              <p>T: +2347040119703</p>
-              <p>E: hello@mvx.trade</p>
+              <p>T: +234700000000</p>
+              <p>E: welcome@example.com</p>
             </div>
 
             <div className="address">
-              <h3>Austin:</h3>
+              <h3>Lagos:</h3>
               <p>7000 North Mopac Expressway,</p>
-              <p> Austin, TX, 78731</p>
-              <p>T: +1 512 514 6221</p>
+              <p> LA, TX, 78731</p>
+              <p>T: +234 34 514 6221</p>
             </div>
             <div className="address">
               <h3>Lagos:</h3>
@@ -311,32 +311,35 @@ export const Footer = () => {
           </div>
         </FooterContactWrapper>
         <FooterHome>
-          <h3>Home</h3>
-          <p>About</p>
-          <p>Partners</p>
-          <p>Careers</p>
-          <p>Careers</p>
+        <h3>Home</h3>
+          <p>About Me</p>
+          <p>Portfolio</p>
+          <p>Blog</p>
+          <p>Contact</p>
           <p className="none">Track Shipment</p>
         </FooterHome>
         <FooterServices>
           <h3>Services</h3>
-          <p>Freight Forwarding</p>
-          <p>Customs</p>
-          <p>Trade Finance</p>
-          <p>Land Haulage</p>
-          <p>Track Shipment</p>
+          <p>Software Development</p>
+          <p>Machine Learning Solutions</p>
+          <p>Code Optimization</p>
+          <p>Data Analytics</p>
+          <p className="none">Track Shipment</p>
         </FooterServices>
         <FooterResources>
-          <h3>Resources</h3>
-          <p>Help &#38; Support</p>
-          <p>Feedback</p>
-          <p>Referral</p>
+        <h3>Resources</h3>
+          <p>Articles</p>
+          <p>Case Studies</p>
+          <p>Learning Resources</p>
+          <p className="none">Track Shipment</p>
         </FooterResources>
         <FooterLegal>
           <h3>Legal</h3>
           <p>Privacy policy</p>
           <p>Cookie policy</p>
           <p>Terms &#38; Conditions</p>
+          
+          <p className="none">Track Shipment</p>
         </FooterLegal>
       </FooterGridWrapper>
       <hr className="second-hr" />
@@ -346,7 +349,7 @@ export const Footer = () => {
             {" "}
             <img src='' alt="Chizzy" />{" "}
           </div>
-          <p>&copy; MVXchange Technologies Limited</p>
+          <p>&copy; Chizzy Technologies Limited</p>
         </div>
         <div>
           <img src={mediaIcons} alt="social media" />
