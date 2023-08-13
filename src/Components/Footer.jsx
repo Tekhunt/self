@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import mvxicon from "../TM-Logo.svg";
-import darkmvxlogo from "../darkTM-logo.svg";
 import mediaIcons from "../socialMediaIcons.svg";
 
 export const FooterWrapper = styled.div`

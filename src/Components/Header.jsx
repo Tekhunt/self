@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import mvxicon from "../TM-Logo.svg";
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
