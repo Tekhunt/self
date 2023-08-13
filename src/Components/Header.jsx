@@ -148,7 +148,7 @@ export const Header = () => {
                 <span> Portfolio</span> <HiOutlineChevronDown />
               </div>
               <a href="">Elavator Pitch</a>
-              <a href="">Partners</a>
+              <a href="">Contact</a>
               <a href="">Partners</a>
             </Linkwrapper>
             <AuthWrapper>

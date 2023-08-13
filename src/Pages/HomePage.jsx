@@ -4,6 +4,7 @@ import { Footer } from "../Components/Footer";
 import { Header } from "../Components/Header";
 import styled from "styled-components";
 import bg from "../backgroundImg.svg";
+import { Contact } from "../Components/Contact";
 
 export const FooterContainer = styled.div`
   background: #dafcff;
@@ -40,6 +41,7 @@ export const HomePage = () => {
         </div>
         <Body />
       </div>
+      <Contact />
       <FooterContainer>
         <Footer />
       </FooterContainer>

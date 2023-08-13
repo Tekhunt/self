@@ -405,6 +405,7 @@ export const Body = () => {
         </div>
         <button><Link to='/projects'>Explore</Link></button>
       </FooterHeroWrapper>
+
     </BodyWrapper>
   );
 };
