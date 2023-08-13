@@ -1,15 +1,11 @@
 import React from "react";
-import playVid from "../playVid.svg";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import smsIcon from "../messageIcon.svg";
 import arrowDown from "../arrow.svg";
 import arrowMobile from "../arrowMobile.svg";
 import smsMobile from "../smsMobile.svg";
 import { Link } from "react-router-dom";
-
-
 import styled from "styled-components";
-import { Contact } from "./Contact";
 
 export const BodyWrapper = styled.div`
   max-width: 1179px;
