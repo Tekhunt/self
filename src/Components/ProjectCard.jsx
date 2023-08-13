@@ -16,7 +16,7 @@ export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, 
               </header>
 
               <a
-                href="#"
+                href="https://chizzy-io.netlify.app/"
                 class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-[#ff8a00] border border-[#ff8a00] rounded hover:shadow focus:outline-none focus:ring"
               >
                 View All Projects
@@ -27,15 +27,16 @@ export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, 
           <div class="lg:col-span-2 lg:py-8">
             <ul class="grid grid-cols-2 gap-4">
               <li>
-                <a href="#" class="block group">
+                <a href="https://chizzy-io.netlify.app/" class="block group">
                   <img
                     src={img2}
                     alt=""
                     class="object-cover w-full rounded aspect-square"
                   />
-
+(// eslint-disable-next-line )
                   <div class="mt-3">
-                    <a href={link1} target="_blank">
+                  (// eslint-disable-next-line )
+                    <a href={link1} target="_blank" rel="noreferrer">
                     <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
                     {ptitle1}
                     </h3>
@@ -46,7 +47,7 @@ export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, 
               </li>
 
               <li>
-                <a href="#" class="block group">
+                <a href="https://chizzy-io.netlify.app/" class="block group">
                   <img
                     src={img1}
                     alt=""
@@ -54,7 +55,7 @@ export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, 
                   />
 
                   <div class="mt-3">
-                  <a href={link2} target="_blank">
+                  <a href={link2} target="_blank" rel="noreferrer">
                     <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
                     {ptitle2}
                     </h3>

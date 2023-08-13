@@ -147,12 +147,12 @@ export const Header = () => {
               <div className="service-tag" onClick={clicker}>
                 <span> Portfolio</span> <HiOutlineChevronDown />
               </div>
-              <a href="">Elavator Pitch</a>
-              <a href="">Contact</a>
-              <a href="">Partners</a>
+              <a href="https://chizzy-io.netlify.app/">Elavator Pitch</a>
+              <a href="https://chizzy-io.netlify.app/">Contact</a>
+              <a href="https://chizzy-io.netlify.app/">Partners</a>
             </Linkwrapper>
             <AuthWrapper>
-              <a href="">Sign in</a>
+              <a href="https://chizzy-io.netlify.app/">Sign in</a>
               <button>Sign up</button>
             </AuthWrapper>
           </HeaderWrapper>
