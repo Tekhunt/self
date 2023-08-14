@@ -33,9 +33,7 @@ export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, 
                     alt=""
                     class="object-cover w-full rounded aspect-square"
                   />
-(// eslint-disable-next-line )
                   <div class="mt-3">
-                  (// eslint-disable-next-line )
                     <a href={link1} target="_blank" rel="noreferrer">
                     <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
                     {ptitle1}
