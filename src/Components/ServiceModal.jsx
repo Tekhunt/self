@@ -5,8 +5,9 @@ import img1 from "./icon1.svg";
 import img2 from "./icon2.svg";
 import img3 from "./icon3.svg";
 import img4 from "./icon4.svg";
-// import { useService } from "./ContextAPI/Context";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 export const ServiceWrapper = styled.div`
   display: flex;
@@ -66,33 +67,41 @@ export const ServiceModal = () => {
       </div>
       <hr />
       <ServiceItemsWrapper>
-        <div className="service">
-          <img src={img1} alt="icon" />
-          <div className="items">
-          <p className="header">Software Development</p>
-            <p className="text">Creating Innovative Software Solutions</p>
-          </div>
+        <div className="service"> 
+        <Link to="/projects">
+            <img src={img1} alt="icon" />
+            <div className="items">
+            <p className="header">Software Development</p>
+              <p className="text">Creating Innovative Software Solutions</p>
+            </div>
+        </Link>
         </div>
         <div className="service">
-          <img src={img2} alt="icon" />
-          <div className="items">
-          <p className="header">Machine Learning Projects</p>
-            <p className="text">Building Intelligent Machine Learning Models</p>
-          </div>
+          <Link to="/projects"> 
+            <img src={img2} alt="icon" />
+            <div className="items">
+            <p className="header">Machine Learning Projects</p>
+              <p className="text">Building Intelligent Machine Learning Models</p>
+            </div>
+          </Link>
         </div>
         <div className="service">
+        <Link to="/projects"> 
           <img src={img3} alt="icon" />
           <div className="items">
           <p className="header">Code Optimization</p>
             <p className="text">Optimizing Code for Efficiency</p>
           </div>
+        </Link> 
         </div>
         <div className="service">
-          <img src={img4} alt="icon" />
-          <div className="items">
-          <p className="header">Data Analytics</p>
-            <p className="text">Extracting Insights from Data</p>
-          </div>
+          <Link to="/projects"> 
+            <img src={img4} alt="icon" />
+            <div className="items">
+            <p className="header">Data Analytics</p>
+              <p className="text">Extracting Insights from Data</p>
+            </div>
+          </Link> 
         </div>
       </ServiceItemsWrapper>
     </ServiceWrapper>

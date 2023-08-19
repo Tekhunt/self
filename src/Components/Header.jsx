@@ -10,6 +10,7 @@ import { useService } from "./ContextAPI/Context";
 import { Modal } from "./Modal";
 import { Link, useNavigate } from "react-router-dom";
 
+
 export const HeaderWrapper = styled.div`
   max-width: 1298px;
   display: flex;
@@ -110,23 +111,27 @@ export const Header = () => {
   const [show, setShow] = useState(false);
   const { service } = useService();
 
-  const navigate = useNavigate();
-
   const clicker = () => {
     setShow(!show);
-    navigate("/", { replace: true });
   };
 
   const handleToggle = () => {
     setOpen((prev) => !prev);
   };
 
+const navigate = useNavigate();
+
+const toHome =() => {
+    navigate("/", { replace: true });
+
+  }
+
   return (
     <Parent>
       {!service ? (
         <>
           <HeaderWrapper>
-            <div>
+            <div onClick={toHome}>
               <img src='' alt="Chizzy" />
             </div>
 
@@ -148,7 +153,9 @@ export const Header = () => {
                 <span> Portfolio</span> <HiOutlineChevronDown />
               </div>
               <a href="https://chizzy-io.netlify.app/">Elavator Pitch</a>
-              <a href="https://chizzy-io.netlify.app/">Contact</a>
+              <Link to="/contact">
+              Contact
+              </Link>
               <a href="https://chizzy-io.netlify.app/">Partners</a>
             </Linkwrapper>
             <AuthWrapper>

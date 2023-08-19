@@ -6,7 +6,7 @@ export const Bio = () => {
         <>
         <Header />
 
-        <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
+        <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 py-20 px-20 pl-0 pr-0 sm:py-3 sm:px-3">
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
     <div class="flex flex-col justify-center mx-auto max-w-xl text-center sm:text-left">
 

@@ -319,7 +319,7 @@ export const FooterHeroWrapper = styled.div`
     justify-content: center;
     align-items: center;
     padding: 25px 52px;
-    background: #005ecd;
+    background: #ff8a00;
     border: none;
     height: 70px;
     width: 211px;
@@ -399,7 +399,7 @@ export const Body = () => {
             Join the community of innovators who have trusted me with their projects.
           </p>
         </div>
-        <button><Link to='/projects'>Explore</Link></button>
+        <button class="inline-block rounded bg-[#ff8a00] border border-[#ff8a00] px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"><Link to='/projects'>Explore</Link></button>
       </FooterHeroWrapper>
 
     </BodyWrapper>

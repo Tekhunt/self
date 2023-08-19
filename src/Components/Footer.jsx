@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import mediaIcons from "../socialMediaIcons.svg";
-
+// import mediaIcons from "../socialMediaIcons.svg";
+import { FaFacebookF,  FaLinkedinIn, FaTwitter, FaInstagram} from 'react-icons/fa';
 export const FooterWrapper = styled.div`
   max-width: 1179px;
   display: flex;
@@ -268,6 +268,12 @@ export const BottomFooterWrapper = styled.div`
     display: flex;
     gap: 27px;
   }
+
+  .sm-icons{
+    display: flex;
+    gap: 15px;
+    color: blue;
+  }
 `;
 
 export const Footer = () => {
@@ -291,8 +297,8 @@ export const Footer = () => {
           </div>
           <div className="address-container">
             <div className="call">
-              <p>T: +234700000000</p>
-              <p>E: welcome@example.com</p>
+              <p>T: +2348067471928</p>
+              <p>E: chizzydmec@gmail.com</p>
             </div>
 
             <div className="address">
@@ -350,7 +356,12 @@ export const Footer = () => {
           <p>&copy; Chizzy Technologies Limited</p>
         </div>
         <div>
-          <img src={mediaIcons} alt="social media" />
+
+          <div className="sm-icons">
+            <span><a href="linkedin.com/in/chiazam-ochiegbu-297b67150/" target="_blank"> <FaLinkedinIn /></a></span><span><FaFacebookF /></span><span><FaInstagram /></span><span><FaTwitter /></span><span><FaFacebookF /></span>
+          </div>
+        
+          {/* <img src={mediaIcons} alt="social media" /> */}
         </div>
       </BottomFooterWrapper>
     </FooterWrapper>

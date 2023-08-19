@@ -6,6 +6,7 @@ import { ServiceContextProvider } from "./Components/ContextAPI/Context";
 import { ServicesPage } from "./Pages/ServicesPage";
 import { Projects } from "./Components/Projects";
 import { Bio } from "./Components/Bio";
+import { ContactPage } from "./Pages/ContactPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/bio" element={<Bio />} />
+          <Route path="/contact" element={<ContactPage />} />
 
           <Route path="/services" element={<ServicesPage />} />
         </Routes>

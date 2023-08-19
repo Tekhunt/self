@@ -13,7 +13,7 @@ export const Projects = () => {
         desc="Here's is a link to team's Month 2 project slide deck "
         img2="https://images.pexels.com/photos/13682408/pexels-photo-13682408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         ptitle1="EkoTracka Youtube Video"
-        pdesc1="Ekotracka is a leading waste management company dedicated to providing sustainable solutions for effective waste disposal and recycling in Lagos. We are committed to creating a cleaner and greener environment by promoting responsible waste management practices."
+        pdesc1="Ekotracka is a leading waste management company dedicated to providing sustainable solutions for effective waste disposal and recycling in Lagos."
         img1="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
         ptitle2="EkoTracka Project Slides"
         pdesc2="Please click on this card to visit EkoTrack official website and view slides "
@@ -37,10 +37,10 @@ export const Projects = () => {
         desc="Explore some of my recent Machine Learning projects."
         img2="https://images.pexels.com/photos/6238100/pexels-photo-6238100.jpeg?auto=compress&cs=tinysrgb&w=800"
         ptitle1="Product recommender"
-        pdesc1="Enhance user shopping experiences with a cutting-edge product recommender system. Leverage machine learning algorithms to analyze user preferences and behavior, providing personalized suggestions that drive engagement and boost sales."
+        pdesc1="Enhance user shopping experiences with a cutting-edge product recommender system."
         img1="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
         ptitle2="AI Fashion Assistant with LLM"
-        pdesc2="Elevate your style with an AI fashion assistant powered by Large Language Models (LLM). This virtual stylist uses advanced natural language processing to provide personalized fashion advice, outfit suggestions, and trend insights, making every wardrobe choice effortlessly on point."
+        pdesc2="Elevate your style with an AI fashion assistant powered by Large Language Models (LLM)."
       />
       <Footer />
     </>
