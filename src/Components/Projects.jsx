@@ -10,7 +10,7 @@ export const Projects = () => {
         header="ALX Project"
         link1="https://youtu.be/NO8UCGCojBE"
         link2="https://ekotracka.netlify.app/"
-        desc="Here's is a link to team's Month 2 project slide deck "
+        desc="Here's a link to my project slide deck"
         img2="https://images.pexels.com/photos/13682408/pexels-photo-13682408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         ptitle1="EkoTracka Youtube Video"
         pdesc1="Ekotracka is a leading waste management company dedicated to providing sustainable solutions for effective waste disposal and recycling in Lagos."

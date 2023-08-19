@@ -53,7 +53,6 @@ const toService =() => {
   return (
     <MenuWrapper>
       <p>Bio</p>
-      {/* <div className="service" onClick={condition}> */}
       <div className="service" onClick={toService}>
 
         <p>Portfolio</p>
@@ -61,7 +60,7 @@ const toService =() => {
           <HiOutlineChevronRight />
         </p>
       </div>
-      <p>Elevaator Pitch</p>
+      <p>Elevator Pitch</p>
       <p>Partners</p>
       <p>Speak to us</p>
       <p className="sign-in">Sign in</p>

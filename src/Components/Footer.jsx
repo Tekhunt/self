@@ -279,15 +279,6 @@ export const BottomFooterWrapper = styled.div`
 export const Footer = () => {
   return (
     <FooterWrapper>
-      {/* <FooterHeroWrapper>
-        <div className="heroTextWrapper">
-        <p> Explore my software and machine learning projects.</p>
-          <p>
-            Join the community of innovators who have trusted me with their projects.
-          </p>
-        </div>
-        <button>Contact Me</button>
-      </FooterHeroWrapper> */}
       <hr className="first-hr" />
       <FooterGridWrapper>
         <FooterContactWrapper>

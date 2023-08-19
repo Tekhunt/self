@@ -152,15 +152,15 @@ const toHome =() => {
               <div className="service-tag" onClick={clicker}>
                 <span> Portfolio</span> <HiOutlineChevronDown />
               </div>
-              <a href="https://chizzy-io.netlify.app/">Elavator Pitch</a>
+              <a href="https://chiazam-ochiegbu.netlify.app/">Elavator Pitch</a>
               <Link to="/contact">
               Contact
               </Link>
-              <a href="https://chizzy-io.netlify.app/">Partners</a>
+              <a href="https://chiazam-ochiegbu.netlify.app/">Partners</a>
             </Linkwrapper>
             <AuthWrapper>
-              <a href="https://chizzy-io.netlify.app/">Sign in</a>
-              <button>Sign up</button>
+              <a href="https://chiazam-ochiegbu.netlify.app/">Hire me</a>
+              <button>Connect</button>
             </AuthWrapper>
           </HeaderWrapper>
           {open && (

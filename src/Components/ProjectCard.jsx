@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, img2, ptitle2, pdesc2}) => {
   return (
     <section>
@@ -14,20 +16,17 @@ export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, 
                 {desc}
                 </p>
               </header>
-
-              <a
-                href="https://chizzy-io.netlify.app/"
-                class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-[#ff8a00] border border-[#ff8a00] rounded hover:shadow focus:outline-none focus:ring"
-              >
+              
+              <Link to="/projects" class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-[#ff8a00] border border-[#ff8a00] rounded hover:shadow focus:outline-none focus:ring">
                 View All Projects
-              </a>
+              </Link>
             </div>
           </div>
 
           <div class="lg:col-span-2 lg:py-8">
             <ul class="grid grid-cols-2 gap-4">
               <li>
-                <a href="https://chizzy-io.netlify.app/" class="block group">
+                <div class="block group">
                   <img
                     src={img2}
                     alt=""
@@ -41,11 +40,11 @@ export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, 
                     </a>
                     <p class="mt-1 text-sm text-gray-700">{pdesc1}</p>
                   </div>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="https://chizzy-io.netlify.app/" class="block group">
+                <div class="block group">
                   <img
                     src={img1}
                     alt=""
@@ -61,7 +60,7 @@ export const ProjectCard = ({header, link1, link2, desc, img1, ptitle1, pdesc1, 
 
                     <p class="mt-1 text-sm text-gray-700">{pdesc2}</p>
                   </div>
-                </a>
+                </div>
               </li>
             </ul>
           </div>

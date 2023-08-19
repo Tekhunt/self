@@ -16,7 +16,6 @@ export const BodyWrapper = styled.div`
   padding: 150px 14px 86px 14px;
   overflow: hidden;
 
-
   .trust {
     width: 260px;
     height: 22px;
@@ -159,9 +158,7 @@ export const HeroWrapper = styled.div`
     }
 
     .colored {
-
       font-size: 32px;
-
     }
 
     .action {
@@ -340,18 +337,27 @@ export const Body = () => {
         <div>
           <div className="colored">
             Hi, I'm<span className="blue"> Chizzy</span> a{" "}
-            <span className="orange">Software and Machine Learning Engineer</span>
+            <span className="orange">
+              Software and Machine Learning Engineer
+            </span>
           </div>
         </div>
         <p className="offer">
-          Welcome to my portfolio! I specialize in developing innovative software solutions and creating intelligent machine learning models. I'm here to showcase my work and demonstrate how technology can shape the future.
+          Welcome to my portfolio! I specialize in developing innovative
+          software solutions and creating intelligent machine learning models.
+          I'm here to showcase my work and demonstrate how technology can shape
+          the future.
         </p>
         <div className="action">
           <div className="btn">
-            <button>View Projects</button>
-            <p>
-            Contact Me <HiOutlineChevronRight size={16} />{" "}
-            </p>
+            <Link to="/projects">
+              <button>View Projects</button>
+            </Link>
+            <Link to="/contact">
+              <p>
+                Contact Me <HiOutlineChevronRight size={16} />{" "}
+              </p>
+            </Link>
           </div>
           <div className="abs-icons">
             <img className="arrowDown" src={arrowDown} alt="arrow" />
@@ -363,10 +369,7 @@ export const Body = () => {
           </div>
         </div>
       </HeroWrapper>
-      <WorkerWrapper>
-        
-        {/* <img src={playVid} alt="worker" /> */}
-      </WorkerWrapper>
+      <WorkerWrapper>{/* <img src={playVid} alt="worker" /> */}</WorkerWrapper>
       <p className="trust">Ideas to elegant solutions.</p>
       <NumberWrapper>
         <div className="one">
@@ -374,15 +377,15 @@ export const Body = () => {
           <p>Companies serviced</p>
         </div>
         <div className="two">
-        <h1>50+</h1>
+          <h1>50+</h1>
           <p>Software Projects</p>
         </div>
         <div className="three">
-        <h1>100k+</h1>
+          <h1>10m+</h1>
           <p>Lines of Code</p>
         </div>
         <div className="four">
-        <h1>90%</h1>
+          <h1>90%</h1>
           <p>Satisfied Clients</p>
         </div>
         <div className="five">
@@ -394,14 +397,16 @@ export const Body = () => {
 
       <FooterHeroWrapper>
         <div className="heroTextWrapper">
-        <p> Explore my software and machine learning projects.</p>
+          <p> Explore my software and machine learning projects.</p>
           <p>
-            Join the community of innovators who have trusted me with their projects.
+            Join the community of innovators who have trusted me with their
+            projects.
           </p>
         </div>
-        <button class="inline-block rounded bg-[#ff8a00] border border-[#ff8a00] px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"><Link to='/projects'>Explore</Link></button>
+        <button class="inline-block rounded bg-[#ff8a00] border border-[#ff8a00] px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400">
+          <Link to="/projects">Explore</Link>
+        </button>
       </FooterHeroWrapper>
-
     </BodyWrapper>
   );
 };
