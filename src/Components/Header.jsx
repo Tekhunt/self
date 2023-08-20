@@ -10,7 +10,6 @@ import { useService } from "./ContextAPI/Context";
 import { Modal } from "./Modal";
 import { Link, useNavigate } from "react-router-dom";
 
-
 export const HeaderWrapper = styled.div`
   max-width: 1298px;
   display: flex;
@@ -119,12 +118,11 @@ export const Header = () => {
     setOpen((prev) => !prev);
   };
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const toHome =() => {
+  const toHome = () => {
     navigate("/", { replace: true });
-
-  }
+  };
 
   return (
     <Parent>
@@ -132,7 +130,7 @@ const toHome =() => {
         <>
           <HeaderWrapper>
             <div onClick={toHome}>
-              <img src='' alt="Chizzy" />
+              <img src="" alt="Chizzy" />
             </div>
 
             <div className="hamburger" onClick={handleToggle}>
@@ -148,20 +146,17 @@ const toHome =() => {
             </div>
 
             <Linkwrapper>
-            <Link to='/bio'>Bio</Link>
+              <Link to="/bio">Bio</Link>
               <div className="service-tag" onClick={clicker}>
                 <span> Portfolio</span> <HiOutlineChevronDown />
               </div>
-              <Link to="/pitch">
-              Elavator Pitch
-              </Link>
-              <Link to="/contact">
-              Contact
-              </Link>
-              <a href="https://chiazam-ochiegbu.netlify.app/">Partners</a>
+              <Link to="/pitch">Elavator Pitch</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/projects">Projects</Link>
             </Linkwrapper>
             <AuthWrapper>
-              <a href="https://chiazam-ochiegbu.netlify.app/">Hire me</a>
+              <Link to="/contact">Hire me</Link>
+              {/* <a href="https://chiazam-ochiegbu.netlify.app/">Hire me</a> */}
               <button>Connect</button>
             </AuthWrapper>
           </HeaderWrapper>

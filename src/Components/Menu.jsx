@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { HiOutlineChevronRight } from "react-icons/hi";
 // import { useService } from "./ContextAPI/Context";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate, Link} from "react-router-dom";
 
 export const MenuWrapper = styled.div`
   display: flex;
@@ -41,30 +40,35 @@ export const MenuWrapper = styled.div`
 `;
 
 export const Menu = () => {
-// const { condition } = useService();
-const navigate = useNavigate();
+  // const { condition } = useService();
+  const navigate = useNavigate();
 
-const toService =() => {
+  const toService = () => {
     navigate("/services", { replace: true });
-
-  }
-
+  };
 
   return (
     <MenuWrapper>
-      <p>Bio</p>
+      <p>
+        <Link to="/bio">Bio</Link>
+      </p>
       <div className="service" onClick={toService}>
-
         <p>Portfolio</p>
         <p>
           <HiOutlineChevronRight />
         </p>
       </div>
-      <p>Elevator Pitch</p>
-      <p>Partners</p>
-      <p>Speak to us</p>
-      <p className="sign-in">Sign in</p>
-      <button>Sign up</button>
+      <p>
+        E<Link to="/pitch">Elavator Pitch</Link>
+      </p>
+      <p>
+        <Link to="/contact">Contact</Link>
+      </p>
+      <p>
+        <Link to="/projects">Projects</Link>
+      </p>
+      <p className="sign-in"><Link to="/contact">Hire me</Link></p>
+      <button>Connect</button>
     </MenuWrapper>
   );
 };
