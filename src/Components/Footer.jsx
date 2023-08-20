@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import mediaIcons from "../socialMediaIcons.svg";
-import { FaFacebookF,  FaLinkedinIn, FaTwitter, FaInstagram} from 'react-icons/fa';
+import { FaFacebookF,  FaLinkedinIn, FaTwitter, FaInstagram, FaGithub} from 'react-icons/fa';
 export const FooterWrapper = styled.div`
   max-width: 1179px;
   display: flex;
@@ -349,7 +349,7 @@ export const Footer = () => {
         <div>
 
           <div className="sm-icons">
-            <span><a href="linkedin.com/in/chiazam-ochiegbu-297b67150/" target="_blank"> <FaLinkedinIn /></a></span><span><FaFacebookF /></span><span><FaInstagram /></span><span><FaTwitter /></span><span><FaFacebookF /></span>
+            <span><a href="linkedin.com/in/chiazam-ochiegbu-297b67150/" target="_blank"> <FaLinkedinIn /></a></span><span> <a href="https://github.com/tekhunt" target="_blank" rel="noreferrer"><FaGithub /> </a> </span><span><FaInstagram /></span><span><FaTwitter /></span><span><FaFacebookF /></span>
           </div>
         
           {/* <img src={mediaIcons} alt="social media" /> */}

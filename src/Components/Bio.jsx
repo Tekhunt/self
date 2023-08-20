@@ -1,5 +1,6 @@
 import { Footer } from "./Footer"
 import { Header } from "./Header"
+import { Link } from "react-router-dom";
 
 export const Bio = () => {
     return (
@@ -15,12 +16,11 @@ export const Bio = () => {
       </p>
 
       <div class="flex justify-center md:justify-start mt-4 md:mt-8">
-        <a
-          href="https://chizzy-io.netlify.app/"
-          class="inline-block rounded bg-[#ff8a00] border border-[#ff8a00] px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        <Link to="/contact"
+          class="inline-block rounded bg-[#ff8a00] border border-[#ff8a00] px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400"
         >
           Let's Collaborate
-        </a>
+        </Link>
       </div>
     </div>
   </div>
