@@ -152,7 +152,9 @@ const toHome =() => {
               <div className="service-tag" onClick={clicker}>
                 <span> Portfolio</span> <HiOutlineChevronDown />
               </div>
-              <a href="https://chiazam-ochiegbu.netlify.app/">Elavator Pitch</a>
+              <Link to="/pitch">
+              Elavator Pitch
+              </Link>
               <Link to="/contact">
               Contact
               </Link>
