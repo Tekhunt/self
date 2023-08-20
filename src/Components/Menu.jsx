@@ -59,7 +59,7 @@ export const Menu = () => {
         </p>
       </div>
       <p>
-        E<Link to="/pitch">Elavator Pitch</Link>
+        <Link to="/pitch">Elavator Pitch</Link>
       </p>
       <p>
         <Link to="/contact">Contact</Link>
