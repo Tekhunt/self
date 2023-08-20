@@ -336,7 +336,7 @@ export const Body = () => {
       <HeroWrapper>
         <div>
           <div className="colored">
-            Hi, I'm<span className="blue"> Chizzy</span> a{" "}
+            Hi, I'm<span className="blue"> Chizzy,</span> a{" "}
             <span className="orange">
               Software and Machine Learning Engineer
             </span>
